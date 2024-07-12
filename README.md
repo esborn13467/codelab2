@@ -368,3 +368,42 @@ class Node {
 - Use branches for feature development.
 - Regularly sync with the main branch to avoid conflicts.
 - Review code before merging to ensure quality and consistency.
+### Detailed Summary of Graph Concepts for Exam Revision
+
+**Graphs:**
+- A graph \( G = (V, E) \) consists of a set of vertices \( V \) and edges \( E \).
+- **Directed Graph (Digraph):** Edges have a specific direction \( e = \langle n1, n2 \rangle \) and can have self-loops.
+- **Undirected Graph:** Edges have no direction \( e = \{n1, n2\} \) and do not have self-loops or parallel edges.
+
+**Graph Terminology:**
+- **Indegree(v):** Number of edges entering vertex \( v \).
+- **Outdegree(v):** Number of edges leaving vertex \( v \).
+- **Path:** Sequence of vertices where each adjacent pair is connected by an edge.
+- **Cycle:** A path where the start and end vertices are the same.
+- **Simple Path:** A path with all distinct vertices.
+- **Simple Cycle:** A cycle with all distinct vertices except the start and end.
+
+**Graph Representations and Operations:**
+- **Vertex and Edge Operations:** Create, insert, and manipulate vertices and edges.
+- **Traversal Techniques:**
+  - **Breadth-First Search (BFS):** Visits vertices in order of increasing distance from the start vertex.
+  - **Depth-First Search (DFS):** Visits vertices by exploring as far as possible before backtracking.
+
+**Directed Acyclic Graphs (DAGs) and Topological Sort:**
+- **DAG:** A directed graph with no cycles.
+- **Topological Sorting:** Ordering of vertices such that for every directed edge \( \langle u, v \rangle \), vertex \( u \) comes before \( v \).
+
+**Critical Paths:**
+- **Definition:** The longest path from the start to the stop vertex in a DAG, determining the earliest completion time.
+- **Critical Path Problem:** Find the longest path in terms of edge costs.
+
+**Shortest Path Problems:**
+- **Problem Definition:** Find the path with the minimum total cost from a start vertex \( a \) to an end vertex \( b \).
+- **Assumptions:** Edges can have negative costs, but no negative cost cycles.
+- **Shortest Path Spanning Tree:** Tree rooted at the start vertex containing the shortest paths to all other vertices.
+
+**Triangle Inequality:**
+- **Statement:** For vertices \( u, v, \) and \( w \), \( d(u, w) \leq d(u, v) + d(v, w) \).
+- **Implication:** Ensures that the shortest path between any two vertices adheres to this inequality.
+
+These topics cover the foundational concepts of graphs, their properties, and various algorithms and problems associated with graph theory, essential for your exam revision.
